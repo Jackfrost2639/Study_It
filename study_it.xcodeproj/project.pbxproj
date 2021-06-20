@@ -39,6 +39,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C57CF0CD267F51F3004303F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5C78B572619EC1C00E1C6D0 /* Main.storyboard */,
+				C5C78B552619EC1C00E1C6D0 /* ViewController.swift */,
+				C57CF0D1267F5221004303F5 /* LaunchScreen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C57CF0CE267F520A004303F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C57CF0CF267F5212004303F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C57CF0D0267F521A004303F5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C57CF0D1267F5221004303F5 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C5C78B5F2619EC1E00E1C6D0 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		C5C78B452619EC1C00E1C6D0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +97,13 @@
 		C5C78B502619EC1C00E1C6D0 /* study_it */ = {
 			isa = PBXGroup;
 			children = (
+				C57CF0D0267F521A004303F5 /* Common */,
+				C57CF0CF267F5212004303F5 /* Model */,
+				C57CF0CE267F520A004303F5 /* ViewModel */,
+				C57CF0CD267F51F3004303F5 /* View */,
 				C5C78B512619EC1C00E1C6D0 /* AppDelegate.swift */,
 				C5C78B532619EC1C00E1C6D0 /* SceneDelegate.swift */,
-				C5C78B552619EC1C00E1C6D0 /* ViewController.swift */,
-				C5C78B572619EC1C00E1C6D0 /* Main.storyboard */,
 				C5C78B5D2619EC1E00E1C6D0 /* Assets.xcassets */,
-				C5C78B5F2619EC1E00E1C6D0 /* LaunchScreen.storyboard */,
 				C5C78B622619EC1E00E1C6D0 /* Info.plist */,
 				C5C78B5A2619EC1C00E1C6D0 /* study_it.xcdatamodeld */,
 			);
