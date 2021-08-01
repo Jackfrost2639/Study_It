@@ -56,10 +56,10 @@
                                     <constraint firstAttribute="width" constant="150" id="Prv-fJ-aYM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGO-i0-5hQ">
-                                <rect key="frame" x="184" y="626" width="47" height="36"/>
+                                <rect key="frame" x="183.5" y="626" width="47" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
@@ -87,6 +87,11 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="studyTimeTextField" destination="sb1-9X-PX6" id="cxV-UG-51c"/>
+                        <outlet property="subjectTextField" destination="Rkl-6Q-S04" id="X2n-Cf-Hyp"/>
+                        <outlet property="titleTextField" destination="6sM-qI-e8d" id="YsC-c3-eYI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuF-3P-seR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

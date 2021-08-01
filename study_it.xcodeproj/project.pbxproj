@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5239B5526B6CD050079FD9D /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5239B5426B6CD050079FD9D /* TaskManager.swift */; };
 		C5587236269B19F700226C0A /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587235269B19F700226C0A /* TaskViewModel.swift */; };
 		C5587239269B1A0F00226C0A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5587238269B1A0F00226C0A /* Task.swift */; };
 		C558723C269B1B2900226C0A /* AddTaskView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C558723B269B1B2900226C0A /* AddTaskView.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5239B5426B6CD050079FD9D /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		C5587235269B19F700226C0A /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		C5587238269B1A0F00226C0A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C558723B269B1B2900226C0A /* AddTaskView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTaskView.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5239B5326B6CCF50079FD9D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C5239B5426B6CD050079FD9D /* TaskManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		C57CF0CD267F51F3004303F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		C5C78B502619EC1C00E1C6D0 /* study_it */ = {
 			isa = PBXGroup;
 			children = (
+				C5239B5326B6CCF50079FD9D /* Manager */,
 				C57CF0D0267F521A004303F5 /* Common */,
 				C57CF0CF267F5212004303F5 /* Model */,
 				C57CF0CE267F520A004303F5 /* ViewModel */,
@@ -195,6 +206,7 @@
 			files = (
 				C5C78B562619EC1C00E1C6D0 /* TaskViewController.swift in Sources */,
 				C5C78B522619EC1C00E1C6D0 /* AppDelegate.swift in Sources */,
+				C5239B5526B6CD050079FD9D /* TaskManager.swift in Sources */,
 				C5C78B5C2619EC1C00E1C6D0 /* study_it.xcdatamodeld in Sources */,
 				C5587236269B19F700226C0A /* TaskViewModel.swift in Sources */,
 				C5587239269B1A0F00226C0A /* Task.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 class TaskViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    let viewModel: TaskViewModel = TaskViewModel()
+//    let viewModel: TaskViewModel = TaskViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,12 @@ class TaskViewController: UIViewController, UITableViewDelegate {
         self.navigationItem.title = "Study It"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
+    }
+    
     @IBAction func moveToAddTask(_ sender: Any) {
         guard let viewController = AddTaskViewController.instance() else {
             return
@@ -37,13 +43,13 @@ class TaskViewController: UIViewController, UITableViewDelegate {
 
 extension TaskViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.tasks.count
+        return TaskManager.shared.tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TaskTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell", for: indexPath) as! TaskTableViewCell
         
-        let task = viewModel.tasks[indexPath.row]
+        let task = TaskManager.shared.tasks[indexPath.row]
                                    
         cell.titleLabel.text = task.title
         cell.subjectButton.setTitle(task.subject, for: .normal)
